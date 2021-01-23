@@ -13,7 +13,7 @@ var chance = 10;
 var gameState="onSling";
 function preload(){
     getBackgroundImg();
-    back =
+    back = loadImage("sprites/bg2.jpg");
 
 }
 function setup(){
