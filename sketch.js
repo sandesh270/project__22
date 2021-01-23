@@ -13,8 +13,8 @@ var chance = 10;
 var gameState="onSling";
 function preload(){
     getBackgroundImg();
-    sound = loadSound("sprites/text.mp3")
-    back = loadImage("sprites/bg2.jpg")
+    back =
+
 }
 function setup(){
     var canvas = createCanvas(1200,400);
@@ -56,19 +56,16 @@ function setup(){
 
     //log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(stone.body,{x:stone.body.position.x, y:stone.body.position.y});
-    sound.play();
+    
 }
 
 function draw(){
-    if(backgroundImg){
-        background(backgroundImg);
-        textSize(35);
-        fill("white");
-        text("score: " + score ,width-300,50)
-
-        }else{
-            background(back)
-        }
+   background(back)
+    textSize(35);
+    fill("white");
+    text("score: " + score ,width-300,50)
+           
+        
     Engine.update(engine);
     strokeWeight(4);
     box1.display();
